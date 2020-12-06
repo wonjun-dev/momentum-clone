@@ -107,7 +107,10 @@ function loadState() {
   }
 
   if (userToDos !== null) {
-    paintToDo(userToDos);
+    const parsedToDo = JSON.parse(userToDos)
+    parsedToDo.forEach(function (todo) {
+      paintToDo(todo.text)
+    })
   }
 }
 
