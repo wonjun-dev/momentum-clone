@@ -5,9 +5,8 @@ function getTime() {
   const currentDate = new Date();
   const hour = currentDate.getHours();
   const minute = currentDate.getMinutes();
-  time.innerText = `${hour < 10 ? `0{hour}` : hour} : ${
-    minute < 10 ? `0${minute}` : minute
-  }`;
+  time.innerText = `${hour < 10 ? `0${hour}` : hour} : ${minute < 10 ? `0${minute}` : minute
+    }`;
 }
 
 function init() {
